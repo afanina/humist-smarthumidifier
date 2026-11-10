@@ -1,0 +1,2569 @@
+{
+  "devices": {
+    "humidifier-kamar1": {
+      "latest": {
+        "suhu": 25.4,
+        "kelembapan": 62.6,
+        "levelAir": 0,
+        "mist": 0,
+        "kipas": 0,
+        "latencyMs": 55,
+        "timestamp": "2026-11-10T17:18:22.408Z"
+      },
+      "history": [
+        {
+          "suhu": 25.7,
+          "kelembapan": 65.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 25,
+          "timestamp": "2026-11-10T17:11:32.683Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 65.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 31,
+          "timestamp": "2026-11-10T17:11:34.663Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 65.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 2002,
+          "timestamp": "2026-11-10T17:11:38.842Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 65.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 20,
+          "timestamp": "2026-11-10T17:11:40.885Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 65.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 56,
+          "timestamp": "2026-11-10T17:11:43.016Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 65.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 39,
+          "timestamp": "2026-11-10T17:11:44.912Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 65.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 78,
+          "timestamp": "2026-11-10T17:11:46.914Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 65.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 28,
+          "timestamp": "2026-11-10T17:11:48.858Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 65.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 2002,
+          "timestamp": "2026-11-10T17:11:52.915Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 65.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 46,
+          "timestamp": "2026-11-10T17:11:54.944Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 65.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 81,
+          "timestamp": "2026-11-10T17:11:56.889Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 65.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 27,
+          "timestamp": "2026-11-10T17:11:58.908Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 65.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 40,
+          "timestamp": "2026-11-10T17:12:00.937Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 66.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 80,
+          "timestamp": "2026-11-10T17:12:02.886Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 66.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 22,
+          "timestamp": "2026-11-10T17:12:04.907Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 66.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 40,
+          "timestamp": "2026-11-10T17:12:06.889Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 66.1,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 22,
+          "timestamp": "2026-11-10T17:12:08.961Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 66.1,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 67,
+          "timestamp": "2026-11-10T17:12:10.884Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 66.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 26,
+          "timestamp": "2026-11-10T17:12:12.908Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 66,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 22,
+          "timestamp": "2026-11-10T17:12:14.916Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 66,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 25,
+          "timestamp": "2026-11-10T17:12:16.890Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 66,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 28,
+          "timestamp": "2026-11-10T17:12:18.890Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 65.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 24,
+          "timestamp": "2026-11-10T17:12:20.889Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 65.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 21,
+          "timestamp": "2026-11-10T17:12:22.898Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 65.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 37,
+          "timestamp": "2026-11-10T17:12:24.894Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 65.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 25,
+          "timestamp": "2026-11-10T17:12:26.911Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 66,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 52,
+          "timestamp": "2026-11-10T17:12:28.905Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 65.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 22,
+          "timestamp": "2026-11-10T17:12:30.943Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 65.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 24,
+          "timestamp": "2026-11-10T17:12:33.098Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 65.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 32,
+          "timestamp": "2026-11-10T17:12:34.918Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 65.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 24,
+          "timestamp": "2026-11-10T17:12:36.888Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 27,
+          "timestamp": "2026-11-10T17:12:38.914Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 21,
+          "timestamp": "2026-11-10T17:12:40.919Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 54,
+          "timestamp": "2026-11-10T17:12:43.023Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 195,
+          "timestamp": "2026-11-10T17:12:45.682Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 25,
+          "timestamp": "2026-11-10T17:12:46.915Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 51,
+          "timestamp": "2026-11-10T17:12:48.905Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 33,
+          "timestamp": "2026-11-10T17:12:50.916Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 23,
+          "timestamp": "2026-11-10T17:12:52.909Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 30,
+          "timestamp": "2026-11-10T17:12:54.901Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 24,
+          "timestamp": "2026-11-10T17:12:56.911Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 22,
+          "timestamp": "2026-11-10T17:12:58.898Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 23,
+          "timestamp": "2026-11-10T17:13:00.953Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 25,
+          "timestamp": "2026-11-10T17:13:02.895Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 26,
+          "timestamp": "2026-11-10T17:13:04.948Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 26,
+          "timestamp": "2026-11-10T17:13:06.888Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 28,
+          "timestamp": "2026-11-10T17:13:09.147Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 23,
+          "timestamp": "2026-11-10T17:13:10.884Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 27,
+          "timestamp": "2026-11-10T17:13:12.893Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 24,
+          "timestamp": "2026-11-10T17:13:15.091Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 25,
+          "timestamp": "2026-11-10T17:13:16.939Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 27,
+          "timestamp": "2026-11-10T17:13:18.922Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 55,
+          "timestamp": "2026-11-10T17:13:20.902Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 32,
+          "timestamp": "2026-11-10T17:13:22.913Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 43,
+          "timestamp": "2026-11-10T17:13:24.953Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 52,
+          "timestamp": "2026-11-10T17:13:26.970Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 329,
+          "timestamp": "2026-11-10T17:13:28.901Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 34,
+          "timestamp": "2026-11-10T17:13:31.906Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 945,
+          "timestamp": "2026-11-10T17:13:34.091Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 485,
+          "timestamp": "2026-11-10T17:13:34.921Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 70,
+          "timestamp": "2026-11-10T17:13:36.925Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 58,
+          "timestamp": "2026-11-10T17:13:39.231Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 113,
+          "timestamp": "2026-11-10T17:13:40.912Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 23,
+          "timestamp": "2026-11-10T17:13:42.901Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 22,
+          "timestamp": "2026-11-10T17:13:44.917Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 27,
+          "timestamp": "2026-11-10T17:13:46.895Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 38,
+          "timestamp": "2026-11-10T17:13:48.891Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 22,
+          "timestamp": "2026-11-10T17:13:50.892Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 23,
+          "timestamp": "2026-11-10T17:13:52.930Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 24,
+          "timestamp": "2026-11-10T17:13:55.723Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 28,
+          "timestamp": "2026-11-10T17:13:56.890Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 29,
+          "timestamp": "2026-11-10T17:13:58.902Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 293,
+          "timestamp": "2026-11-10T17:14:00.969Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 27,
+          "timestamp": "2026-11-10T17:14:03.115Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 247,
+          "timestamp": "2026-11-10T17:14:04.897Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 38,
+          "timestamp": "2026-11-10T17:14:07.505Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 65.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 351,
+          "timestamp": "2026-11-10T17:14:09.047Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 27,
+          "timestamp": "2026-11-10T17:14:10.915Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 48,
+          "timestamp": "2026-11-10T17:14:12.915Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.1,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 48,
+          "timestamp": "2026-11-10T17:14:14.923Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.1,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 48,
+          "timestamp": "2026-11-10T17:14:16.961Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.1,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 90,
+          "timestamp": "2026-11-10T17:14:18.894Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.1,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 51,
+          "timestamp": "2026-11-10T17:14:20.922Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.1,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 51,
+          "timestamp": "2026-11-10T17:14:23.100Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.1,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 19,
+          "timestamp": "2026-11-10T17:14:24.899Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65.1,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 24,
+          "timestamp": "2026-11-10T17:14:26.961Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 65,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 2002,
+          "timestamp": "2026-11-10T17:14:33.711Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 65,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 1124,
+          "timestamp": "2026-11-10T17:14:34.987Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 65,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 29,
+          "timestamp": "2026-11-10T17:14:36.093Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 65,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 22,
+          "timestamp": "2026-11-10T17:14:38.093Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 34,
+          "timestamp": "2026-11-10T17:14:44.281Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 23,
+          "timestamp": "2026-11-10T17:14:46.077Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 29,
+          "timestamp": "2026-11-10T17:14:48.159Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 24,
+          "timestamp": "2026-11-10T17:14:50.077Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 24,
+          "timestamp": "2026-11-10T17:14:52.496Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 368,
+          "timestamp": "2026-11-10T17:14:54.186Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 85,
+          "timestamp": "2026-11-10T17:14:56.312Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 403,
+          "timestamp": "2026-11-10T17:14:58.254Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 138,
+          "timestamp": "2026-11-10T17:15:00.104Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 55,
+          "timestamp": "2026-11-10T17:15:02.082Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 24,
+          "timestamp": "2026-11-10T17:15:04.377Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 434,
+          "timestamp": "2026-11-10T17:15:06.124Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 27,
+          "timestamp": "2026-11-10T17:15:08.435Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.1,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 109,
+          "timestamp": "2026-11-10T17:15:10.399Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.1,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 40,
+          "timestamp": "2026-11-10T17:15:12.161Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.1,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 55,
+          "timestamp": "2026-11-10T17:15:14.114Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.1,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 29,
+          "timestamp": "2026-11-10T17:15:16.082Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 64,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 24,
+          "timestamp": "2026-11-10T17:15:18.095Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 44,
+          "timestamp": "2026-11-10T17:15:20.081Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 34,
+          "timestamp": "2026-11-10T17:15:22.069Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 22,
+          "timestamp": "2026-11-10T17:15:24.089Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 63.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 29,
+          "timestamp": "2026-11-10T17:15:26.257Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 63.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 27,
+          "timestamp": "2026-11-10T17:15:28.156Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 64,
+          "timestamp": "2026-11-10T17:15:30.076Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 25,
+          "timestamp": "2026-11-10T17:15:33.114Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 602,
+          "timestamp": "2026-11-10T17:15:34.270Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 64.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 58,
+          "timestamp": "2026-11-10T17:15:36.138Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 31,
+          "timestamp": "2026-11-10T17:15:38.247Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 64.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 23,
+          "timestamp": "2026-11-10T17:15:40.075Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 64.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 23,
+          "timestamp": "2026-11-10T17:15:42.076Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 64.1,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 25,
+          "timestamp": "2026-11-10T17:15:46.064Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 64.1,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 26,
+          "timestamp": "2026-11-10T17:15:46.120Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 63.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 27,
+          "timestamp": "2026-11-10T17:15:48.186Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 63.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 56,
+          "timestamp": "2026-11-10T17:15:50.120Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 63.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 29,
+          "timestamp": "2026-11-10T17:15:52.130Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 63.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 28,
+          "timestamp": "2026-11-10T17:15:54.163Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 63.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 95,
+          "timestamp": "2026-11-10T17:15:56.130Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 63.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 27,
+          "timestamp": "2026-11-10T17:15:58.117Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 27,
+          "timestamp": "2026-11-10T17:16:00.148Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 47,
+          "timestamp": "2026-11-10T17:16:02.116Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 24,
+          "timestamp": "2026-11-10T17:16:04.131Z"
+        },
+        {
+          "suhu": 25.7,
+          "kelembapan": 63.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 30,
+          "timestamp": "2026-11-10T17:16:06.193Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 22,
+          "timestamp": "2026-11-10T17:16:09.204Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 602,
+          "timestamp": "2026-11-10T17:16:10.427Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 47,
+          "timestamp": "2026-11-10T17:16:12.123Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 22,
+          "timestamp": "2026-11-10T17:16:14.144Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 25,
+          "timestamp": "2026-11-10T17:16:16.118Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 25,
+          "timestamp": "2026-11-10T17:16:18.138Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 27,
+          "timestamp": "2026-11-10T17:16:20.117Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 23,
+          "timestamp": "2026-11-10T17:16:22.132Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 33,
+          "timestamp": "2026-11-10T17:16:24.119Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 20,
+          "timestamp": "2026-11-10T17:16:26.119Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 20,
+          "timestamp": "2026-11-10T17:16:28.206Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 73,
+          "timestamp": "2026-11-10T17:16:30.121Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 26,
+          "timestamp": "2026-11-10T17:16:32.153Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 51,
+          "timestamp": "2026-11-10T17:16:34.123Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 29,
+          "timestamp": "2026-11-10T17:16:36.128Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 27,
+          "timestamp": "2026-11-10T17:16:39.739Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 1216,
+          "timestamp": "2026-11-10T17:16:40.265Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 26,
+          "timestamp": "2026-11-10T17:16:42.180Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 79,
+          "timestamp": "2026-11-10T17:16:44.134Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 34,
+          "timestamp": "2026-11-10T17:16:46.127Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 25,
+          "timestamp": "2026-11-10T17:16:48.132Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 24,
+          "timestamp": "2026-11-10T17:16:50.120Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 26,
+          "timestamp": "2026-11-10T17:16:52.255Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 23,
+          "timestamp": "2026-11-10T17:16:54.119Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 24,
+          "timestamp": "2026-11-10T17:16:57.791Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 913,
+          "timestamp": "2026-11-10T17:16:58.381Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 242,
+          "timestamp": "2026-11-10T17:17:00.619Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 279,
+          "timestamp": "2026-11-10T17:17:02.181Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 30,
+          "timestamp": "2026-11-10T17:17:04.174Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 22,
+          "timestamp": "2026-11-10T17:17:06.124Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 21,
+          "timestamp": "2026-11-10T17:17:08.193Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 30,
+          "timestamp": "2026-11-10T17:17:10.143Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 28,
+          "timestamp": "2026-11-10T17:17:12.125Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 22,
+          "timestamp": "2026-11-10T17:17:14.148Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 54,
+          "timestamp": "2026-11-10T17:17:16.141Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 38,
+          "timestamp": "2026-11-10T17:17:18.131Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 36,
+          "timestamp": "2026-11-10T17:17:20.124Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 21,
+          "timestamp": "2026-11-10T17:17:22.137Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 27,
+          "timestamp": "2026-11-10T17:17:24.194Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.1,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 91,
+          "timestamp": "2026-11-10T17:17:26.160Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63.1,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 23,
+          "timestamp": "2026-11-10T17:17:28.146Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 31,
+          "timestamp": "2026-11-10T17:17:30.349Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 169,
+          "timestamp": "2026-11-10T17:17:32.154Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 40,
+          "timestamp": "2026-11-10T17:17:34.152Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 63,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 32,
+          "timestamp": "2026-11-10T17:17:36.120Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 62.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 25,
+          "timestamp": "2026-11-10T17:17:38.129Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 62.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 28,
+          "timestamp": "2026-11-10T17:17:40.120Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 62.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 25,
+          "timestamp": "2026-11-10T17:17:42.130Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 62.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 47,
+          "timestamp": "2026-11-10T17:17:44.133Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 62.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 29,
+          "timestamp": "2026-11-10T17:17:46.615Z"
+        },
+        {
+          "suhu": 25.6,
+          "kelembapan": 62.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 298,
+          "timestamp": "2026-11-10T17:17:48.127Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 62.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 34,
+          "timestamp": "2026-11-10T17:17:50.199Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 62.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 32,
+          "timestamp": "2026-11-10T17:17:52.339Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 62.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 26,
+          "timestamp": "2026-11-10T17:17:54.136Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 62.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 33,
+          "timestamp": "2026-11-10T17:17:56.175Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 62.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 73,
+          "timestamp": "2026-11-10T17:17:58.230Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 62.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 84,
+          "timestamp": "2026-11-10T17:18:00.188Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 62.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 91,
+          "timestamp": "2026-11-10T17:18:02.522Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 62.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 25,
+          "timestamp": "2026-11-10T17:18:04.183Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 62.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 84,
+          "timestamp": "2026-11-10T17:18:06.428Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 62.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 322,
+          "timestamp": "2026-11-10T17:18:08.142Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 62.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 42,
+          "timestamp": "2026-11-10T17:18:10.411Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 62.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 26,
+          "timestamp": "2026-11-10T17:18:12.250Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 62.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 30,
+          "timestamp": "2026-11-10T17:18:14.423Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 62.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 290,
+          "timestamp": "2026-11-10T17:18:16.431Z"
+        },
+        {
+          "suhu": 25.5,
+          "kelembapan": 62.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 36,
+          "timestamp": "2026-11-10T17:18:18.254Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 62.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 26,
+          "timestamp": "2026-11-10T17:18:20.186Z"
+        },
+        {
+          "suhu": 25.4,
+          "kelembapan": 62.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 55,
+          "timestamp": "2026-11-10T17:18:22.408Z"
+        }
+      ],
+      "control": {
+        "mode": "manual",
+        "mist": 0,
+        "kipas": 0
+      },
+      "stats": {
+        "count": 3557,
+        "sumSuhu": 92367.30000000044,
+        "minSuhu": 12.6,
+        "maxSuhu": 28.9,
+        "sumKelembapan": 217408.20000000033,
+        "minKelembapan": 28.5,
+        "maxKelembapan": 80.2,
+        "mistActiveMs": 6123821,
+        "kipasActiveMs": 6169869
+      },
+      "actuatorState": {
+        "prevMist": 0,
+        "prevKipas": 0,
+        "prevTimeMs": 1794331102408
+      },
+      "firstSeen": "2026-11-10T08:03:18.373Z",
+      "prevLevelAir": 0
+    },
+    "deteksi_suhu": {
+      "latest": {
+        "suhu": 2.3,
+        "kelembapan": 23.3,
+        "levelAir": 0,
+        "mist": 0,
+        "kipas": 0,
+        "latencyMs": 67,
+        "timestamp": "2026-11-10T16:49:27.268Z"
+      },
+      "history": [
+        {
+          "suhu": 2.1,
+          "kelembapan": 24.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 0,
+          "timestamp": "2026-11-10T16:46:55.276Z"
+        },
+        {
+          "suhu": 2.1,
+          "kelembapan": 24.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 80,
+          "timestamp": "2026-11-10T16:46:57.265Z"
+        },
+        {
+          "suhu": 2.1,
+          "kelembapan": 24.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 45,
+          "timestamp": "2026-11-10T16:46:59.260Z"
+        },
+        {
+          "suhu": 2.1,
+          "kelembapan": 24.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 41,
+          "timestamp": "2026-11-10T16:47:01.307Z"
+        },
+        {
+          "suhu": 2.1,
+          "kelembapan": 24,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 94,
+          "timestamp": "2026-11-10T16:47:03.321Z"
+        },
+        {
+          "suhu": 2.1,
+          "kelembapan": 23.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 99,
+          "timestamp": "2026-11-10T16:47:05.281Z"
+        },
+        {
+          "suhu": 2.1,
+          "kelembapan": 23.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 72,
+          "timestamp": "2026-11-10T16:47:07.256Z"
+        },
+        {
+          "suhu": 2.1,
+          "kelembapan": 23.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 33,
+          "timestamp": "2026-11-10T16:47:09.269Z"
+        },
+        {
+          "suhu": 2.1,
+          "kelembapan": 23.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 46,
+          "timestamp": "2026-11-10T16:47:11.269Z"
+        },
+        {
+          "suhu": 2.1,
+          "kelembapan": 23.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 46,
+          "timestamp": "2026-11-10T16:47:13.257Z"
+        },
+        {
+          "suhu": 2.1,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 34,
+          "timestamp": "2026-11-10T16:47:15.290Z"
+        },
+        {
+          "suhu": 2.1,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 67,
+          "timestamp": "2026-11-10T16:47:17.296Z"
+        },
+        {
+          "suhu": 2.1,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 78,
+          "timestamp": "2026-11-10T16:47:19.383Z"
+        },
+        {
+          "suhu": 2.1,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 159,
+          "timestamp": "2026-11-10T16:47:21.282Z"
+        },
+        {
+          "suhu": 2.1,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 61,
+          "timestamp": "2026-11-10T16:47:23.273Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 63,
+          "timestamp": "2026-11-10T16:47:25.252Z"
+        },
+        {
+          "suhu": 2.1,
+          "kelembapan": 23.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 29,
+          "timestamp": "2026-11-10T16:47:27.267Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 44,
+          "timestamp": "2026-11-10T16:47:29.297Z"
+        },
+        {
+          "suhu": 2.1,
+          "kelembapan": 23.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 73,
+          "timestamp": "2026-11-10T16:47:31.309Z"
+        },
+        {
+          "suhu": 2.1,
+          "kelembapan": 23.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 87,
+          "timestamp": "2026-11-10T16:47:33.255Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 32,
+          "timestamp": "2026-11-10T16:47:35.277Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.7,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 53,
+          "timestamp": "2026-11-10T16:47:37.372Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 154,
+          "timestamp": "2026-11-10T16:47:39.251Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.9,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 32,
+          "timestamp": "2026-11-10T16:47:41.305Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.8,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 80,
+          "timestamp": "2026-11-10T16:47:43.329Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 124,
+          "timestamp": "2026-11-10T16:47:45.264Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 40,
+          "timestamp": "2026-11-10T16:47:47.319Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 95,
+          "timestamp": "2026-11-10T16:47:49.347Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 126,
+          "timestamp": "2026-11-10T16:47:51.306Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 82,
+          "timestamp": "2026-11-10T16:47:53.353Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 132,
+          "timestamp": "2026-11-10T16:47:55.249Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 31,
+          "timestamp": "2026-11-10T16:47:57.254Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 32,
+          "timestamp": "2026-11-10T16:47:59.300Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 80,
+          "timestamp": "2026-11-10T16:48:01.251Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 26,
+          "timestamp": "2026-11-10T16:48:03.289Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 65,
+          "timestamp": "2026-11-10T16:48:05.249Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 26,
+          "timestamp": "2026-11-10T16:48:07.247Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 22,
+          "timestamp": "2026-11-10T16:48:09.264Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 40,
+          "timestamp": "2026-11-10T16:48:11.258Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 34,
+          "timestamp": "2026-11-10T16:48:13.371Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 149,
+          "timestamp": "2026-11-10T16:48:15.254Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 31,
+          "timestamp": "2026-11-10T16:48:17.279Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 55,
+          "timestamp": "2026-11-10T16:48:19.311Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 87,
+          "timestamp": "2026-11-10T16:48:21.252Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 27,
+          "timestamp": "2026-11-10T16:48:23.363Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.2,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 138,
+          "timestamp": "2026-11-10T16:48:25.334Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 110,
+          "timestamp": "2026-11-10T16:48:27.263Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 39,
+          "timestamp": "2026-11-10T16:48:29.268Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 50,
+          "timestamp": "2026-11-10T16:48:31.944Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 832,
+          "timestamp": "2026-11-10T16:48:33.315Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 93,
+          "timestamp": "2026-11-10T16:48:35.262Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 37,
+          "timestamp": "2026-11-10T16:48:37.253Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 27,
+          "timestamp": "2026-11-10T16:48:39.277Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 53,
+          "timestamp": "2026-11-10T16:48:41.302Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 76,
+          "timestamp": "2026-11-10T16:48:43.298Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.6,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 74,
+          "timestamp": "2026-11-10T16:48:45.270Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 45,
+          "timestamp": "2026-11-10T16:48:47.272Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 51,
+          "timestamp": "2026-11-10T16:48:49.272Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 47,
+          "timestamp": "2026-11-10T16:48:51.264Z"
+        },
+        {
+          "suhu": 2.2,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 43,
+          "timestamp": "2026-11-10T16:48:53.256Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 28,
+          "timestamp": "2026-11-10T16:48:55.262Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 38,
+          "timestamp": "2026-11-10T16:48:57.253Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 27,
+          "timestamp": "2026-11-10T16:48:59.257Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 37,
+          "timestamp": "2026-11-10T16:49:01.260Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 33,
+          "timestamp": "2026-11-10T16:49:03.313Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 99,
+          "timestamp": "2026-11-10T16:49:05.353Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 140,
+          "timestamp": "2026-11-10T16:49:07.393Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 167,
+          "timestamp": "2026-11-10T16:49:09.253Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 26,
+          "timestamp": "2026-11-10T16:49:11.272Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.5,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 49,
+          "timestamp": "2026-11-10T16:49:13.333Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 141,
+          "timestamp": "2026-11-10T16:49:15.274Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 46,
+          "timestamp": "2026-11-10T16:49:17.256Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 31,
+          "timestamp": "2026-11-10T16:49:19.366Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 139,
+          "timestamp": "2026-11-10T16:49:21.317Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 91,
+          "timestamp": "2026-11-10T16:49:23.263Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.4,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 40,
+          "timestamp": "2026-11-10T16:49:25.294Z"
+        },
+        {
+          "suhu": 2.3,
+          "kelembapan": 23.3,
+          "levelAir": 0,
+          "mist": 0,
+          "kipas": 0,
+          "latencyMs": 67,
+          "timestamp": "2026-11-10T16:49:27.268Z"
+        }
+      ],
+      "control": {
+        "mode": "auto",
+        "mist": 0,
+        "kipas": 0
+      },
+      "stats": {
+        "count": 77,
+        "sumSuhu": 170.10000000000028,
+        "minSuhu": 2.1,
+        "maxSuhu": 2.3,
+        "sumKelembapan": 1808.8000000000006,
+        "minKelembapan": 23.2,
+        "maxKelembapan": 24.4,
+        "mistActiveMs": 0,
+        "kipasActiveMs": 0
+      },
+      "actuatorState": {
+        "prevMist": 0,
+        "prevKipas": 0,
+        "prevTimeMs": 1794329367268
+      },
+      "prevLevelAir": 0,
+      "firstSeen": "2026-11-10T16:46:55.276Z"
+    }
+  }
+}

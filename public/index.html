@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Humist — Smart Adaptive Humidifier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --pink: #ffeef3;
+    --pink-deep: #e8578f;
+    --alert: #c94268;
+    --green: #d6ecd2;
+    --green-deep: #4f8a5b;
+    --cream: #fffaf4;
+    --ink: #2c2420;
+    --ink-soft: #8a8078;
+    --yellow: #fde9b6;
+    --yellow-deep: #c98a1f;
+    --lavender: #e3e2fb;
+    --lavender-deep: #6d63d6;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 40px 24px 72px;
+    min-height: 100vh;
+    background: linear-gradient(160deg, #ffe3ea 0%, #fff3e4 42%, #e2f1dd 100%);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+  }
+
+  .page { max-width: 1400px; margin: 0 auto; }
+
+  .top-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr 0.95fr;
+    gap: 24px;
+    align-items: stretch;
+    margin-bottom: 24px;
+  }
+  .top-grid .block { margin-bottom: 0; }
+
+  .analysis-inner {
+    display: grid;
+    grid-template-columns: minmax(260px, 1fr) 1.6fr;
+    gap: 32px;
+    position: relative; z-index: 1;
+  }
+  .analysis-stats { display: flex; flex-direction: column; }
+
+  @media (max-width: 920px) {
+    .top-grid { grid-template-columns: 1fr; }
+    .analysis-inner { grid-template-columns: 1fr; }
+  }
+
+  h1, h2, .display { font-family: 'Fredoka', sans-serif; font-weight: 600; margin: 0; }
+
+  /* ---------- Header ---------- */
+  .brand {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  .brand-name { display: flex; align-items: center; gap: 12px; }
+  .brand-mark {
+    width: 46px; height: 46px; border-radius: 16px;
+    background: var(--ink); color: var(--pink);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 20px;
+    box-shadow: 0 6px 14px rgba(44,36,32,0.18);
+  }
+  .brand-text h1 { font-size: 22px; color: var(--ink); line-height: 1.1; }
+  .brand-text p { margin: 2px 0 0; font-size: 12.5px; color: var(--ink-soft); font-weight: 500; }
+
+  .node-chip {
+    font-family: 'Inter', sans-serif; font-size: 12.5px; font-weight: 700;
+    background: var(--cream); color: var(--ink);
+    padding: 8px 14px; border-radius: 999px;
+    box-shadow: 0 4px 12px rgba(44,36,32,0.1);
+  }
+
+  /* ---------- Blocks (solid pastel) ---------- */
+  .block {
+    border-radius: 22px;
+    padding: 28px;
+    margin-bottom: 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .block--green { background: linear-gradient(150deg, #e4f3e0 0%, #c9e8c2 100%); box-shadow: 0 14px 30px -12px rgba(79,138,91,0.35); }
+  .block--pink  { background: linear-gradient(150deg, #fff3f7 0%, #ffd9e6 100%); box-shadow: 0 14px 30px -14px rgba(232,87,143,0.3); }
+
+  /* Panel putih di dalam block berwarna, buat area yang butuh kontras tinggi (dropdown, input, chart, list) */
+  .panel {
+    background: var(--cream);
+    border-radius: 14px;
+    box-shadow: 0 2px 10px rgba(44,36,32,0.05);
+  }
+
+  .block-head {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 22px;
+  }
+  .block-head h2 { font-size: 17px; }
+  .block--green .block-head h2 { color: var(--green-deep); }
+  .block--pink .block-head h2 { color: var(--pink-deep); }
+
+  .blob {
+    position: absolute; border-radius: 50%; opacity: 0.55; pointer-events: none;
+  }
+  .blob--1 { width: 110px; height: 110px; right: -30px; top: -30px; background: rgba(255,255,255,0.55); }
+  .blob--2 { width: 70px; height: 70px; right: 30px; bottom: -28px; background: rgba(255,255,255,0.35); }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .blob--1 { animation: floatSlow 9s ease-in-out infinite; }
+    .blob--2 { animation: floatSlow 11s ease-in-out infinite reverse; }
+  }
+  @keyframes floatSlow {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(-8px, 10px) scale(1.08); }
+  }
+
+  .wave {
+    position: absolute; right: 8px; top: 14px; width: 130px; height: 64px;
+    opacity: 0.4; pointer-events: none;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .wave path { animation: drift 6s ease-in-out infinite; transform-origin: center; }
+    .wave path:nth-child(2) { animation-duration: 7.5s; animation-direction: reverse; }
+  }
+  @keyframes drift {
+    0%, 100% { transform: translateX(0) scaleY(1); }
+    50% { transform: translateX(-7px) scaleY(1.1); }
+  }
+
+  /* ---------- Climate block ---------- */
+  .climate-row { display: flex; align-items: flex-end; gap: 26px; position: relative; z-index: 1; }
+  .climate-primary .num { font-size: 50px; line-height: 1; color: var(--pink-deep); font-family: 'Fredoka', sans-serif; font-weight: 600; }
+  .climate-primary .unit { font-size: 19px; color: var(--pink-deep); font-weight: 600; font-family: 'Fredoka', sans-serif; }
+  .climate-secondary .num { font-size: 26px; line-height: 1; color: var(--ink); font-family: 'Fredoka', sans-serif; font-weight: 600; }
+  .climate-secondary .unit { font-size: 14px; color: var(--ink); font-weight: 600; }
+  .cap { margin-top: 4px; font-size: 12.5px; color: var(--ink-soft); font-weight: 500; }
+
+  .status-row { display: flex; gap: 10px; margin-top: 18px; flex-wrap: wrap; position: relative; z-index: 1; }
+  .pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 12.5px; font-weight: 700;
+    padding: 7px 13px; border-radius: 999px;
+    background: var(--cream); color: var(--pink-deep);
+    box-shadow: 0 2px 8px rgba(44,36,32,0.06);
+  }
+  .pill.warn { color: var(--alert); }
+  .pill .dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+
+  /* ---------- Control block ---------- */
+  .mode-switch {
+    display: flex; background: rgba(255,255,255,0.55); border-radius: 999px; padding: 4px;
+    margin-bottom: 16px; position: relative; z-index: 1;
+  }
+  .mode-switch button {
+    flex: 1; border: none; background: transparent; cursor: pointer;
+    padding: 9px 0; border-radius: 999px; font-family: 'Inter', sans-serif;
+    font-weight: 600; font-size: 13.5px; color: var(--pink-deep);
+  }
+  #btnMode.is-manual { background: var(--ink); color: white; }
+
+  .control-row {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 0; position: relative; z-index: 1;
+  }
+  .control-label { font-size: 14px; font-weight: 600; color: var(--ink); display: flex; align-items: center; gap: 8px; }
+  .icon-badge {
+    width: 30px; height: 30px; border-radius: 10px; background: rgba(255,255,255,0.65);
+    display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0;
+  }
+
+  button.toggle {
+    border: none; cursor: pointer; font-family: 'Inter', sans-serif;
+    font-weight: 600; font-size: 13px; padding: 8px 18px; border-radius: 999px;
+  }
+  button.toggle {
+    border: none; box-shadow: 0 3px 10px rgba(44,36,32,0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  button.toggle.off { background: var(--cream); color: var(--pink-deep); }
+  button.toggle.on { background: var(--ink); color: white; }
+  button.toggle:disabled { opacity: 0.5; cursor: not-allowed; box-shadow: none; }
+  button.toggle:not(:disabled):hover { transform: translateY(-1px); box-shadow: 0 6px 14px rgba(44,36,32,0.14); }
+
+  .fan-block { padding-top: 6px; position: relative; z-index: 1; }
+  input[type=range] { width: 100%; margin-top: 10px; accent-color: var(--ink); }
+  input[type=range]:disabled { opacity: 0.4; }
+  .speedValue { color: var(--pink-deep); font-weight: 700; }
+
+  #manualHint {
+    font-size: 12.5px; color: var(--pink-deep); background: rgba(255,255,255,0.6);
+    padding: 9px 13px; border-radius: 12px; margin-bottom: 8px; position: relative; z-index: 1;
+  }
+
+  /* ---------- Node / Analysis blocks (pastel juga, bukan cream polos) ---------- */
+  select {
+    width: 100%; padding: 12px 14px; border-radius: 10px;
+    border: none; font-size: 14px; font-family: 'Inter', sans-serif;
+    background: transparent; color: var(--ink); font-weight: 600;
+  }
+  .device-status { display: flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--ink-soft); margin-top: 10px; position: relative; z-index: 1; }
+  .badge { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; position: relative; }
+  .badge.online { background: var(--green-deep); }
+  .badge.offline { background: #c7bdb0; }
+  .badge.online::after {
+    content: ""; position: absolute; inset: -4px; border-radius: 50%;
+    background: var(--green-deep); opacity: 0.4;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .badge.online::after { animation: pulseDot 2s ease-out infinite; }
+  }
+  @keyframes pulseDot {
+    0% { transform: scale(0.6); opacity: 0.5; }
+    100% { transform: scale(1.8); opacity: 0; }
+  }
+
+  .add-device-row { display: flex; gap: 8px; margin-top: 14px; position: relative; z-index: 1; }
+  .add-device-row .panel { flex: 1; padding: 0; }
+  .add-device-row input {
+    width: 100%; padding: 11px 14px; border-radius: 10px; border: none; background: transparent;
+    font-size: 13.5px; font-family: 'Inter', sans-serif; color: var(--ink); font-weight: 600;
+  }
+  .pill-btn {
+    border: none; background: var(--ink); color: white; cursor: pointer;
+    border-radius: 999px; padding: 0 18px; font-weight: 700; font-family: 'Inter', sans-serif; font-size: 13.5px;
+    box-shadow: 0 4px 12px rgba(44,36,32,0.18);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .pill-btn:hover { transform: translateY(-1px); box-shadow: 0 7px 16px rgba(44,36,32,0.24); }
+  #addDeviceMsg { font-size: 12.5px; color: var(--pink-deep); margin-top: 7px; min-height: 1em; position: relative; z-index: 1; }
+
+  .statRow {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 11px 14px; font-size: 13.5px; position: relative; z-index: 1;
+  }
+  .statLabel { color: var(--ink-soft); font-weight: 600; }
+  .statValue { font-weight: 800; color: var(--ink); font-family: 'Fredoka', sans-serif; }
+
+  .btnReset {
+    width: 100%; margin-top: 14px; cursor: pointer; border: none;
+    background: var(--ink); color: var(--cream);
+    font-weight: 700; font-size: 13.5px; padding: 12px; border-radius: 999px;
+    box-shadow: 0 4px 12px rgba(44,36,32,0.18); position: relative; z-index: 1;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btnReset:hover { transform: translateY(-1px); box-shadow: 0 7px 16px rgba(44,36,32,0.24); }
+
+  .chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; position: relative; z-index: 1; }
+  @media (max-width: 920px) { .chart-grid { grid-template-columns: 1fr; } }
+  .chart-card { padding: 14px; }
+  .chart-card .label { font-size: 12.5px; color: var(--ink-soft); font-weight: 700; margin-bottom: 6px; }
+  .chartWrap { position: relative; height: 150px; }
+
+  .label { color: var(--ink-soft); font-size: 13px; }
+
+  #lastUpdate { text-align: center; font-size: 12px; color: var(--ink-soft); margin-top: 18px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="brand">
+    <div class="brand-name">
+      <div class="brand-mark">H</div>
+      <div class="brand-text">
+        <h1>Humist</h1>
+        <p>Pelembap otomatis yang tahu kapan harus menyala</p>
+      </div>
+    </div>
+    <span class="node-chip" id="deviceChip">node</span>
+  </div>
+
+  <div class="top-grid">
+  <!-- ===== Climate block ===== -->
+  <div class="block block--pink">
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="block-head"><h2>Kondisi ruangan</h2></div>
+
+    <div class="climate-row">
+      <svg class="wave" viewBox="0 0 130 64" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 42 Q 16 24 32 42 T 64 42 T 96 42 T 130 42" fill="none" stroke="#e8578f" stroke-width="4" stroke-linecap="round"/>
+        <path d="M0 54 Q 16 40 32 54 T 64 54 T 96 54 T 130 54" fill="none" stroke="#e8578f" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+      </svg>
+      <div class="climate-primary">
+        <span class="num display" id="kelembapan">--</span><span class="unit">%</span>
+        <div class="cap">Kelembapan</div>
+      </div>
+      <div class="climate-secondary">
+        <span class="num display" id="suhu">--</span><span class="unit">°C</span>
+        <div class="cap">Suhu</div>
+      </div>
+    </div>
+
+    <div class="status-row">
+      <span class="pill" id="levelAirPill"><span class="dot"></span><span id="levelAir">--</span></span>
+      <span class="pill"><span class="dot"></span><span id="kipasAktual">--</span>% kipas</span>
+      <span class="pill" id="latencyPill"><span class="dot"></span><span id="latencyValue">--</span> ms</span>
+    </div>
+  </div>
+
+  <!-- ===== Control block ===== -->
+  <div class="block block--pink">
+    <div class="blob blob--1"></div>
+    <div class="block-head"><h2>Kontrol</h2></div>
+
+    <div class="mode-switch">
+      <button id="btnMode">Mode: AUTO</button>
+    </div>
+
+    <div id="manualHint">Aktifkan mode manual dulu untuk memakai kontrol di bawah</div>
+
+    <div class="control-row">
+      <span class="control-label">Mist maker</span>
+      <button id="btnMist" class="toggle off">OFF</button>
+    </div>
+
+    <div class="fan-block">
+      <div class="control-label">Kecepatan kipas: <span class="speedValue" id="kipasValue">0</span>%</div>
+      <input type="range" id="sliderKipas" min="0" max="100" step="5" value="0">
+    </div>
+  </div>
+
+  <!-- ===== Node block ===== -->
+  <div class="block block--pink">
+    <div class="blob blob--1"></div>
+    <div class="block-head"><h2>Node</h2></div>
+
+    <div class="panel" style="padding:4px 2px; position:relative; z-index:1;">
+      <select id="deviceSelect"></select>
+    </div>
+    <div class="device-status" id="deviceStatus"></div>
+
+    <div class="add-device-row">
+      <div class="panel"><input type="text" id="inputDeviceId" placeholder="ID node baru, mis. humidifier-kamar2"></div>
+      <button id="btnAddDevice" class="pill-btn">Tambah</button>
+    </div>
+    <div id="addDeviceMsg"></div>
+  </div>
+  </div><!-- /top-grid -->
+
+  <!-- ===== Analysis block ===== -->
+  <div class="block block--green">
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="block-head"><h2>Analisis</h2></div>
+
+    <div class="analysis-inner">
+      <div class="analysis-stats panel" style="display:flex; flex-direction:column;">
+        <div class="statRow"><span class="statLabel">Suhu min / max</span><span class="statValue" id="statSuhuMinMax">-- / --</span></div>
+        <div class="statRow"><span class="statLabel">Suhu rata-rata</span><span class="statValue" id="statSuhuAvg">--</span></div>
+        <div class="statRow"><span class="statLabel">Kelembapan min / max</span><span class="statValue" id="statKelembapanMinMax">-- / --</span></div>
+        <div class="statRow"><span class="statLabel">Kelembapan rata-rata</span><span class="statValue" id="statKelembapanAvg">--</span></div>
+        <div class="statRow"><span class="statLabel">Lama mist maker aktif</span><span class="statValue" id="statMistActive">--</span></div>
+        <div class="statRow"><span class="statLabel">Lama kipas aktif</span><span class="statValue" id="statKipasActive">--</span></div>
+        <div style="padding: 0 14px 14px;"><button class="btnReset" id="btnResetStats">Reset statistik</button></div>
+      </div>
+
+      <div class="chart-grid">
+        <div class="chart-card panel">
+          <div class="label">Rentang suhu (°C)</div>
+          <div class="chartWrap"><canvas id="chartSuhu"></canvas></div>
+        </div>
+        <div class="chart-card panel">
+          <div class="label">Rentang kelembapan (%)</div>
+          <div class="chartWrap"><canvas id="chartKelembapan"></canvas></div>
+        </div>
+        <div class="chart-card panel">
+          <div class="label">Suhu real-time</div>
+          <div class="chartWrap"><canvas id="chartRealtimeSuhu"></canvas></div>
+        </div>
+        <div class="chart-card panel">
+          <div class="label">Kelembapan real-time</div>
+          <div class="chartWrap"><canvas id="chartRealtimeKelembapan"></canvas></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="lastUpdate">Belum ada data masuk</div>
+</div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+  <script>
+    const socket = io();
+    const warnaSuhu = { min: '#ffe0b0', avg: '#e8578f', max: '#c23f72' };
+    const warnaKelembapan = { min: '#cdeac6', avg: '#4f8a5b', max: '#2f6338' };
+
+    const chartTickColor = '#8a8078';
+    const chartGridColor = '#ece4d8';
+
+    const chartSuhu = new Chart(document.getElementById('chartSuhu'), {
+      type: 'bar',
+      data: { labels: ['Min', 'Rata-rata', 'Max'], datasets: [{ data: [0,0,0], backgroundColor: [warnaSuhu.min, warnaSuhu.avg, warnaSuhu.max], borderRadius: 8 }] },
+      options: { maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: {
+        y: { beginAtZero: true, suggestedMax: 50, ticks: { color: chartTickColor }, grid: { color: chartGridColor } },
+        x: { ticks: { color: chartTickColor }, grid: { display: false } }
+      } }
+    });
+
+    const chartKelembapan = new Chart(document.getElementById('chartKelembapan'), {
+      type: 'bar',
+      data: { labels: ['Min', 'Rata-rata', 'Max'], datasets: [{ data: [0,0,0], backgroundColor: [warnaKelembapan.min, warnaKelembapan.avg, warnaKelembapan.max], borderRadius: 8 }] },
+      options: { maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: {
+        y: { beginAtZero: true, suggestedMax: 90, ticks: { color: chartTickColor }, grid: { color: chartGridColor } },
+        x: { ticks: { color: chartTickColor }, grid: { display: false } }
+      } }
+    });
+
+    const MAX_POINTS_REALTIME = 30;
+
+    const chartRealtimeSuhu = new Chart(document.getElementById('chartRealtimeSuhu'), {
+      type: 'line',
+      data: { labels: [], datasets: [{ label: 'Suhu (°C)', data: [], borderColor: '#e8578f', backgroundColor: 'rgba(232,87,143,0.12)', tension: 0.35, pointRadius: 2, fill: true }] },
+      options: { maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: {
+        x: { ticks: { maxTicksLimit: 6, color: chartTickColor }, grid: { display: false } },
+        y: { ticks: { color: chartTickColor }, grid: { color: chartGridColor } }
+      } }
+    });
+
+    const chartRealtimeKelembapan = new Chart(document.getElementById('chartRealtimeKelembapan'), {
+      type: 'line',
+      data: { labels: [], datasets: [{ label: 'Kelembapan (%)', data: [], borderColor: '#4f8a5b', backgroundColor: 'rgba(79,138,91,0.12)', tension: 0.35, pointRadius: 2, fill: true }] },
+      options: { maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: {
+        x: { ticks: { maxTicksLimit: 6, color: chartTickColor }, grid: { display: false } },
+        y: { ticks: { color: chartTickColor }, grid: { color: chartGridColor } }
+      } }
+    });
+
+    function formatJamSingkat(timestamp) {
+      return timestamp ? new Date(timestamp).toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second: '2-digit' }) : '';
+    }
+
+    function seedGrafikRealtime(history) {
+      const labels = history.map((h) => formatJamSingkat(h.timestamp));
+      chartRealtimeSuhu.data.labels = labels;
+      chartRealtimeSuhu.data.datasets[0].data = history.map((h) => h.suhu);
+      chartRealtimeSuhu.update();
+      chartRealtimeKelembapan.data.labels = labels;
+      chartRealtimeKelembapan.data.datasets[0].data = history.map((h) => h.kelembapan);
+      chartRealtimeKelembapan.update();
+    }
+
+    function tambahTitikRealtime(d) {
+      const label = formatJamSingkat(d.timestamp);
+      [[chartRealtimeSuhu, d.suhu], [chartRealtimeKelembapan, d.kelembapan]].forEach(([chart, nilai]) => {
+        chart.data.labels.push(label);
+        chart.data.datasets[0].data.push(nilai);
+        if (chart.data.labels.length > MAX_POINTS_REALTIME) {
+          chart.data.labels.shift();
+          chart.data.datasets[0].data.shift();
+        }
+        chart.update();
+      });
+    }
+
+    function perbaruiGrafik(s) {
+      chartSuhu.data.datasets[0].data = [s.minSuhu ?? 0, s.avgSuhu ?? 0, s.maxSuhu ?? 0];
+      chartSuhu.update();
+      chartKelembapan.data.datasets[0].data = [s.minKelembapan ?? 0, s.avgKelembapan ?? 0, s.maxKelembapan ?? 0];
+      chartKelembapan.update();
+    }
+    let control = { mode: 'auto', mist: 0, kipas: 0 };
+    let currentDeviceId = null;
+
+    function tampilkanSensor(d) {
+      document.getElementById('suhu').textContent = d.suhu ?? '--';
+      document.getElementById('kelembapan').textContent = d.kelembapan ?? '--';
+      document.getElementById('levelAir').textContent = d.levelAir ? 'Air habis' : 'Air tersedia';
+      document.getElementById('levelAirPill').classList.toggle('warn', !!d.levelAir);
+      document.getElementById('kipasAktual').textContent = d.kipas ?? '--';
+      document.getElementById('latencyValue').textContent = d.latencyMs ?? '--';
+      document.getElementById('latencyPill').classList.toggle('warn', (d.latencyMs ?? 0) > 300);
+      if (d.timestamp) {
+        document.getElementById('lastUpdate').textContent =
+          'Update terakhir: ' + new Date(d.timestamp).toLocaleTimeString('id-ID');
+      }
+    }
+
+    function formatDurasi(ms) {
+      if (!ms || ms <= 0) return '0 detik';
+      const totalDetik = Math.floor(ms / 1000);
+      const jam = Math.floor(totalDetik / 3600);
+      const menit = Math.floor((totalDetik % 3600) / 60);
+      const detik = totalDetik % 60;
+      if (jam > 0) return `${jam}j ${menit}m ${detik}d`;
+      if (menit > 0) return `${menit}m ${detik}d`;
+      return `${detik} detik`;
+    }
+
+    function tampilkanStats(s) {
+      document.getElementById('statSuhuMinMax').textContent =
+        (s.minSuhu ?? '--') + ' / ' + (s.maxSuhu ?? '--') + ' °C';
+      document.getElementById('statSuhuAvg').textContent = (s.avgSuhu ?? '--') + ' °C';
+      document.getElementById('statKelembapanMinMax').textContent =
+        (s.minKelembapan ?? '--') + ' / ' + (s.maxKelembapan ?? '--') + ' %';
+      document.getElementById('statKelembapanAvg').textContent = (s.avgKelembapan ?? '--') + ' %';
+      document.getElementById('statMistActive').textContent = formatDurasi(s.mistActiveMs);
+      document.getElementById('statKipasActive').textContent = formatDurasi(s.kipasActiveMs);
+      perbaruiGrafik(s);
+    }
+
+    function render() {
+      const isManual = control.mode === 'manual';
+
+      const modeBtn = document.getElementById('btnMode');
+      modeBtn.textContent = 'Mode: ' + (isManual ? 'MANUAL' : 'AUTO');
+      modeBtn.classList.toggle('is-manual', isManual);
+
+      const mb = document.getElementById('btnMist');
+      mb.textContent = control.mist ? 'ON' : 'OFF';
+      mb.className = 'toggle ' + (control.mist ? 'on' : 'off');
+      mb.disabled = !isManual;
+
+      const slider = document.getElementById('sliderKipas');
+      slider.value = control.kipas ?? 0;
+      slider.disabled = !isManual;
+      document.getElementById('kipasValue').textContent = control.kipas ?? 0;
+
+      document.getElementById('manualHint').style.display = isManual ? 'none' : 'block';
+    }
+
+    async function kirimControl(next) {
+      await fetch('/api/control', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ deviceId: currentDeviceId, ...next })
+      });
+    }
+
+    function toggleMode() {
+      kirimControl({ mode: control.mode === 'manual' ? 'auto' : 'manual' });
+    }
+
+    function toggleMist() {
+      if (control.mode !== 'manual') return;
+      kirimControl({ mist: control.mist ? 0 : 1 });
+    }
+
+    document.getElementById('btnMode').onclick = toggleMode;
+    document.getElementById('btnMist').onclick = toggleMist;
+
+    const sliderKipas = document.getElementById('sliderKipas');
+    sliderKipas.addEventListener('input', () => {
+      document.getElementById('kipasValue').textContent = sliderKipas.value;
+    });
+    sliderKipas.addEventListener('change', () => {
+      if (control.mode !== 'manual') return;
+      kirimControl({ kipas: Number(sliderKipas.value) });
+    });
+
+    document.getElementById('btnResetStats').onclick = async () => {
+      if (!confirm('Reset semua statistik untuk node ini (min/max/rata-rata/durasi aktif)?')) return;
+      await fetch('/api/stats/reset', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ deviceId: currentDeviceId })
+      });
+    };
+
+    document.getElementById('btnAddDevice').onclick = async () => {
+      const input = document.getElementById('inputDeviceId');
+      const msgEl = document.getElementById('addDeviceMsg');
+      const id = input.value.trim();
+      msgEl.textContent = '';
+      if (!id) { msgEl.textContent = 'ID node nggak boleh kosong'; return; }
+
+      const res = await fetch('/api/devices', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ deviceId: id })
+      });
+      const data = await res.json();
+      if (!res.ok) { msgEl.textContent = data.error || 'Gagal menambahkan node'; return; }
+
+      input.value = '';
+      currentDeviceId = data.deviceId;
+      muatDataDevice(currentDeviceId);
+    };
+
+    // ===== Device selector =====
+    function perbaruiStatusDevice(daftar) {
+      const dev = daftar.find((d) => d.id === currentDeviceId);
+      const statusEl = document.getElementById('deviceStatus');
+      const chipEl = document.getElementById('deviceChip');
+      if (!dev) { statusEl.textContent = ''; return; }
+      const badge = dev.online ? 'online' : 'offline';
+      statusEl.innerHTML = `<span class="badge ${badge}"></span>${dev.online ? 'Online' : 'Offline'} — pertama connect: ${new Date(dev.firstSeen).toLocaleString('id-ID')}`;
+      chipEl.textContent = dev.id;
+    }
+
+    function perbaruiDaftarDevice(daftar) {
+      const select = document.getElementById('deviceSelect');
+      const idSebelumnya = currentDeviceId;
+      select.innerHTML = '';
+      daftar.forEach((d) => {
+        const opt = document.createElement('option');
+        opt.value = d.id;
+        opt.textContent = d.id + (d.online ? ' (online)' : ' (offline)');
+        select.appendChild(opt);
+      });
+
+      if (daftar.length === 0) return;
+
+      // Pertahankan device yang lagi dipilih kalau masih ada di daftar, kalau nggak pilih yang pertama
+      const masihAda = daftar.some((d) => d.id === idSebelumnya);
+      currentDeviceId = masihAda ? idSebelumnya : daftar[0].id;
+      select.value = currentDeviceId;
+
+      perbaruiStatusDevice(daftar);
+    }
+
+    document.getElementById('deviceSelect').addEventListener('change', (e) => {
+      currentDeviceId = e.target.value;
+      muatDataDevice(currentDeviceId);
+    });
+
+    async function muatDataDevice(deviceId) {
+      const res = await fetch('/api/latest?deviceId=' + encodeURIComponent(deviceId));
+      const d = await res.json();
+      currentDeviceId = d.deviceId;
+      if (d.latest) tampilkanSensor(d.latest);
+      control = d.control;
+      if (d.stats) tampilkanStats(d.stats);
+      if (d.devices) perbaruiDaftarDevice(d.devices);
+      seedGrafikRealtime(d.history || []);
+      render();
+    }
+
+    socket.on('sensorUpdate', (d) => { if (d.deviceId === currentDeviceId) { tampilkanSensor(d); tambahTitikRealtime(d); } });
+    socket.on('controlUpdate', (d) => { if (d.deviceId === currentDeviceId) { control = d.control; render(); } });
+    socket.on('statsUpdate', (d) => { if (d.deviceId === currentDeviceId) tampilkanStats(d.stats); });
+    socket.on('deviceListUpdate', (daftar) => {
+      perbaruiDaftarDevice(daftar);
+      perbaruiStatusDevice(daftar);
+    });
+
+    // Load awal: ambil daftar device dulu, baru data device pertama
+    fetch('/api/devices').then((r) => r.json()).then((daftar) => {
+      perbaruiDaftarDevice(daftar);
+      if (currentDeviceId) muatDataDevice(currentDeviceId);
+    });
+  </script>
+</body>
+</html>
